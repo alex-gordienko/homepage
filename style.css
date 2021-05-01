@@ -1,0 +1,64 @@
+.contacts li a.twitter:hover, .contacts li a.inst:hover {
+    color: dimgrey;
+  }
+
+  #current-age{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 0.25em;
+  }
+  blockquote {
+      margin: 5px;
+      background: #F0F0F1;
+      color: #333334;
+      padding: 5px 20px;
+      position: relative;
+      border-left: 5px solid #DFDEDE;
+      cursor:unset;
+  }
+  blockquote:hover{
+    background: #d6d6da;
+     transition: all 0.3s ease;
+  }
+  blockquote:before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      color: #BCBCBC;
+      text-shadow: 1px 2px 0 white;
+  }
+  blockquote p {
+      margin: 0 0 0px;
+      line-height: 1.5rem;
+      font-size: 15px;
+  }
+  blockquote p::before, blockquote p::after{
+    content: '"';
+  } 
+  blockquote cite {
+      font-style: normal;
+      font-weight: 300;
+  }
+
+  .scrollable{
+    box-shadow: 8px 0px 9px -5px rgba(0, 0, 0, 0.4) inset;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: auto;
+    height: 250px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollable::-webkit-scrollbar{
+    width:0px;
+  }
+  .progress-bar {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    height: 5px;
+    background:currentColor;
+    max-width: 100%;
+    width: 0%;
+  }
