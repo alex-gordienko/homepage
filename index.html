@@ -22,18 +22,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="white">
-    <meta property="og:description" content="&mdash; Hello! I’m a skilled frontend developer with 7 years of experience in UI/UX design, application development, and database modeling. I strive to craft precise, responsive, fast, easy-to-use environments with both strong purpose and great looks.">
+    <meta property="og:description" content="&mdash; You know, who am I">
     <meta property="og:image:alt" content="Screenshot of the homepage">
     <meta property="og:image:height" content="1800">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="2880">
     <meta property="og:image" content="https://volodymyrkushnir.com/assets/images/og-image.en_US.png">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="Alex Gordienko &mdash; Résumé">
+    <meta property="og:title" content="Robert Downey jr. &mdash; Résumé">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://github.com/alexoid1999?tab=repositories">
-    <base href="https://github.com/alexoid1999?tab=repositories">
-    <title>Alex Gordienko &mdash; Résumé</title>
+    <base href="https://github.com/alexoid1999/homepage">
+    <title>Robert Downey jr &mdash; Résumé</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon-512x512.png">
@@ -44,8 +44,344 @@
     <link rel="me" href="skype:lexagordiy">
     <link rel="me" href="tel:+380639383667">
     <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      .contacts li a.twitter:hover, .contacts li a.inst:hover {
+        color: dimgrey;
+      }
+
+      #current-age{
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 0.25em;
+      }
+      blockquote {
+          margin: 5px;
+          background: #F0F0F1;
+          color: #333334;
+          padding: 5px 20px;
+          position: relative;
+          border-left: 5px solid #DFDEDE;
+          cursor:unset;
+      }
+      blockquote:hover{
+        background: #d6d6da;
+         transition: all 0.3s ease;
+      }
+      blockquote:before {
+          content: "";
+          position: absolute;
+          left: -10px;
+          top: 5px;
+          color: #BCBCBC;
+          text-shadow: 1px 2px 0 white;
+      }
+      blockquote p {
+          margin: 0 0 0px;
+          line-height: 1.5rem;
+          font-size: 15px;
+      }
+      blockquote p::before, blockquote p::after{
+        content: '"';
+      } 
+      blockquote cite {
+          font-style: normal;
+          font-weight: 300;
+      }
+
+      .scrollable{
+        box-shadow: 8px 0px 9px -5px rgba(0, 0, 0, 0.4) inset;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: auto;
+        height: 250px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .scrollable::-webkit-scrollbar{
+        width:0px;
+      }
+      .progress-bar {
+        position: relative;
+        top: 0;
+        z-index: 1;
+        height: 5px;
+        background:currentColor;
+        max-width: 100%;
+        width: 0%;
+      }
+
+    </style>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <article>
+        <div class="page" style="border-color: midnightblue;">
+          <div class="stackable grid">
+            <div class="row">
+              <div class="three wide center aligned column">
+                <!-- Avatar -->
+                <div class="avatar-wrapper">
+                  <img class="avatar" src=".assets/images/avatar.jpg" label="My profile picture"></img>
+                </div>
+              </div>
+              <div class="thirteen wide column">
+                <div class="stackable grid">
+                  <div class="sixteen wide column">
+                    <!-- Name, job, contacts -->
+                    <h1 class="name">Robert Downey jr.</h1>
+                    <div class="job">You know, who am I</div>
+                    <ul class="contacts">
+                      <li>
+                        <a href="https://www.facebook.com/robertdowneyjr" rel="author" class="facebook">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                          <span>robertdowneyjr</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:alexoid1999@gmail.com" rel="author" class="mail">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                          <span>alexoid1999@gmail.com</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/robertdowneyjr" rel="author" class="twitter">
+                          <svg class="icon" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg"><path d="M 630, 425 A 195, 195 0 0 1 331, 600 A 142, 142 0 0 0 428, 570 A  70,  70 0 0 1 370, 523 A  70,  70 0 0 0 401, 521 A  70,  70 0 0 1 344, 455 A  70,  70 0 0 0 372, 460 A  70,  70 0 0 1 354, 370 A 195, 195 0 0 0 495, 442 A  67,  67 0 0 1 611, 380 A 117, 117 0 0 0 654, 363 A  65,  65 0 0 1 623, 401 A 117, 117 0 0 0 662, 390 A  65,  65 0 0 1 630, 425 Z" style="fill: currentColor"/></svg>
+                          <span>robertdowneyjr</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/robertdowneyjr/?hl=ru" rel="author" class="inst">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path d="M12.7 10c0-1.5-1.2-2.7-2.7-2.7S7.3 8.5 7.3 10s1.2 2.7 2.7 2.7c1.5 0 2.7-1.2 2.7-2.7zm1.4 0c0 2.3-1.8 4.1-4.1 4.1S5.9 12.3 5.9 10S7.7 5.9 10 5.9s4.1 1.8 4.1 4.1zm1.1-4.3c0 .6-.4 1-1 1s-1-.4-1-1s.4-1 1-1s1 .5 1 1zM10 3.4c-1.2 0-3.7-.1-4.7.3c-.7.3-1.3.9-1.5 1.6c-.4 1-.3 3.5-.3 4.7s-.1 3.7.3 4.7c.2.7.8 1.3 1.5 1.5c1 .4 3.6.3 4.7.3s3.7.1 4.7-.3c.7-.3 1.2-.8 1.5-1.5c.4-1.1.3-3.6.3-4.7s.1-3.7-.3-4.7c-.2-.7-.8-1.3-1.5-1.5c-1-.5-3.5-.4-4.7-.4zm8 6.6v3.3c0 1.2-.4 2.4-1.3 3.4c-.9.9-2.1 1.3-3.4 1.3H6.7c-1.2 0-2.4-.4-3.4-1.3c-.8-.9-1.3-2.1-1.3-3.4V10V6.7c0-1.3.5-2.5 1.3-3.4C4.3 2.5 5.5 2 6.7 2h6.6c1.2 0 2.4.4 3.4 1.3c.8.9 1.3 2.1 1.3 3.4V10z" style="fill: currentColor"/></svg>
+                          <span>robertdowneyjr</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tel:+380000000000" rel="author" class="phone">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+                          <span>Not today, son</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://robert-downeyjr.com/" rel="author" class="website">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></svg>
+                          <span>https://robert-downeyjr.com/</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sixteen wide mobile only column">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="sixteen wide column">
+                    <!-- Intro -->
+                    <h2>Résumé</h2>
+                    <p>Genius, billionaire, playboy, philanthropist... american actor, producer and musician. An extraordinary, charismatic and eccentric personality in life. "Bad Hollywood Boy" managed to survive more than one turn in his life, which made him a frequent hero of the yellow press.</p>
+                    <p id='current-age'></p>
+                    <blockquote>
+                      <p>I like to think that life can change completely in a few hours. Otherwise I would be bored with life.</p>
+                      <cite>Robert Downey Jr.</cite>
+                    </blockquote>
+                    <blockquote>
+                      <p>Can you trust your inner voice if in the morning, when you need to go to work, it says that you need to sleep?</p>
+                      <cite>Robert Downey Jr.</cite>
+                    </blockquote> 
+                    <blockquote>
+                      <p>Another person is like hugging a cactus. We all have to hug cacti. It is important to believe that it is necessary, to learn to find pleasure in it, and one day, when you really need it, someone will hug you.</p>
+                      <cite>Robert Downey Jr.</cite>
+                    </blockquote> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <!-- Experience -->
+                <h3>Biography</h3>
+                <h4>Personal Life</h4>
+                <ul class="timeline">
+                  <!-- Events -->
+                  <li>
+                    <p><em>4<sup>th</sup> April 1965</em></p>
+                    <p><strong>Born</strong> - Born in New York City</p>
+                  </li>
+                  <li>
+                    <p><em>21<sup>st</sup> December 1970</em></p>
+                    <p><strong>The first film</strong> - I'm made mine film debut playing a puppy in his father's film, Pound (1970), in which actors played dogs</p>
+                  </li>
+                  <li>
+                    <p><em>17<sup>th</sup> September 1985</em></p>
+                    <p><strong>Drugs</strong> -  Sadly, the story line and character rang especially true for Me, who had been introduced to drugs at the age of eight by his father, and developed a full-fledged addiction as he headed into his 20s.</p>
+                  </li>
+                  <li>
+                    <p><em>25<sup>th</sup> December 1987</em></p>
+                    <p><strong>Hollywood</strong> - By this time, the 27-year-old Me had come to be seen as one of the most gifted actors of his generation, but he had also earned a reputation as a troubled and controversial figure in Hollywood.</p>
+                  </li>
+                  <li>
+                    <p><em>24<sup>th</sup> November 1991</em></p>
+                    <p><strong>Established a reputation</strong> - I'm had established a reputation as a critically acclaimed A-List actor. He earned praise for his comic turn as a shifty soap opera producer in Soapdish</p>
+                  </li>
+                  <li>
+                    <p><em> May 1992</em></p>
+                    <p><strong>Marriage</strong> - Married Deborah Falconer (born August 13, 1965) is an American singer, songwriter, model, and actress.</p>
+                  </li>
+                  <li>
+                    <p><em>24<sup>th</sup> April 2001</em></p>
+                    <p><strong>Downey's personal life</strong> - On April 24, 2001, I was arrested for allegedly being under the influence of an undisclosed "stimulant." Downey's personal life was in turmoil, too, as Falconer sued him for divorce in 2004.</p>
+                  </li>
+                  <li>
+                    <p><em>12<sup>th</sup> October 2005</em></p>
+                    <p><strong>Marriage</strong> - Married producer Susan Levin in 2005</p>
+                  </li>
+                  <li>
+                    <p><em>8<sup>th</sup> May 2008</em></p>
+                    <p><strong>Iron Man</strong> - I'm played the wealthy industrialist-turned-crime fighter Tony Stark in the smash hit Iron Man (2008), which grossed more than $318 million.</p>
+                  </li>
+                  <li>
+                    <p><em>7<sup>th</sup> February 2012</em></p>
+                    <p><strong>The first child</strong> - Our first child together on February 7, 2012.</p>
+                  </li>
+                  <li>
+                    <p><em>25<sup>th</sup> May 2012</em></p>
+                    <p><strong>The Avengers</strong> - The crime fighting picked up again in 2012, when Iron Man character was back in action in The Avengers, a movie that featured a bevy of Hollywood talent</p>
+                  </li>
+                  <li>
+                    <p><em>4<sup>th</sup> November 2014</em></p>
+                    <p><strong>A daughter named Avri</strong> - On November 4, 2014, Me and Levin welcomed their second child, a daughter named Avri.</p>
+                  </li>
+                  <li>
+                    <p><em>16<sup>th</sup> June 2015</em></p>
+                    <p><strong>Strange behaive</strong> - In June 1996, I was stopped by police after driving naked in his Porsche on Sunset Boulevard, and found not only to be without clothes, but in possession of cocaine, heroine and a .357 Magnum. Just fun fact :)</p>
+                  </li>   
+                  
+                </ul>
+              </div>
+              <div class="six wide column">
+                <section>
+                  <h3>Some Funny Facts &#x1f603;</h3>
+                  <div class="progress-bar" id="myBar"></div>
+                  <div class="scrollable" id='scrollable-div'>
+                    <ol class="inverted">
+                      <li>Acting is in his blood. He’s the son of director Robert Downey Sr. and actress Elsie Downey and made his debut in his father’s film, Pound (1990). Robert played a puppy.</li>
+                      <li>Robert Elias Jr.? His family name was Elias until his father changed it to Downey in the 1950s.</li>
+                      <li>The future action star studied ballet at the age of 10.</li>
+                      <li>Bright lights, big city! When Robert was 16, he quit school and moved back to New York to start his acting career. His first gigs were in off-Broadway plays.</li>
+                      <li>In the early days of his career, the struggling actor bussed tables at a SoHo restaurant.</li>
+                      <li>He became one of the members of the infamous ‘80s Brat Pack. Fellow Brat Packer Anthony Michael Hall is his eldest son Indio’s godfather.</li>
+                      <li>Pretty in Pink’s Molly Ringwald has revealed that she pushed for Robert to get the part of Duckie in the hit 80s flick, but producers decided to give the role to Jon Cryer instead.</li>
+                      <li>He has a younger sister named Allyson, who spent some time as an actress before turning her attention to writing.</li>
+                      <li>One of his first loves was Sarah Jessica Parker, who he met while being an extra on the set of Girls Just Want to Have Fun . The lovebirds were together for seven years beginning in 1984 before they split over his alcohol and drug use. "She tried to help me," he has said. "She was so miffed when I didn't get my act together."</li>
+                      <li>Live from New York, it’s Robert Downey Jr.! The actor was a cast member on the 1985 season of Saturday Night Live.</li>
+                      <li>Robert married his first wife, singer Deborah Falconer after dating for just 42 days. They have a son Indio, now 21.</li>
+                      <li>The actor wrote and starred in his first documentary The Last Party in 1993.</li>
+                      <li>Robert did drugs the first time with his father when he was a child and fell into a cycle of addiction. He spent four months in jail in 1997 and another year in 1999 for drug possession.</li>
+                      <li>We swooned for him as Calista Flockhart’s love interest Larry Paul on Ally McBeal. Robert won a Golden Globe for the role but was written off the show in 2001 because of his personal issues.</li>
+                      <li>It isn’t easy becoming a member of Hollywood’s 20 Million Club (stars who earn more than $20 million per film), but Robert did just thanks to the success of the Iron Man franchise.</li>
+                      <li>Tinseltown loves a comeback story and Robert has thanked Mel Gibson for reviving his career. Mel cast Robert in a small role in 2003’s The Singing Detective.</li>
+                      <li>Vive l’amour. Robert met his now-wife Susan in 2003 on the Montreal set of the movie Gothika. He credits her for helping him maintain his sobriety.</li>
+                      <li>After a two-year engagement, Susan and Robert married in the Hamptons (a favourite vacation spot of Robert's) in August 2005. They have two children – a son Exton, 3, and a daughter, Avri, who was born in November 2014.</li>
+                      <li>Gothika producer Joel Silver gave the toast at their wedding. The two would go on to collaborate on the Sherlock Holmes franchise.</li>
+                      <li>In interviews, he refers to Susan as "the Mrs." and has her named tattooed on his arm.</li>
+                      <li>Robert has courted the Academy twice. He was nominated for a best actor for Chaplin in 1993 and best supporting actor in 2009 for Tropic Thunder.</li>
+                      <li>Coincidentally, the star purchased the former home of Charlie Chaplin a few years prior to landing the role of the silent film legend.</li>
+                      <li>That’s what friends are for! Elton John cast him in the music video for his 2001 song “I Want Love.”</li>
+                      <li>Robert believes he was born to play the part of Iron Man, telling Esquire, "I think Iron Man wound up being the first time I screen-tested since Chaplin. As far as I was concerned, it was destiny."</li>
+                      <li>He’s a hero off-screen as well. In March 2015, he presented a seven-year-old fan named Alex (who was born with a partially developed right arm) with his very own bionic Iron Man arm.</li>
+                      <li>The Iron Man movies have already grossed more than $2 billion worldwide at the box office – a number that will grow should Robert sign on for a fourth installment.</li>
+                      <li>Call him Old MacDonald! At his $13 million dollar Malibu mansion, he has two goats and some alpacas.</li>
+                      <li>Some people collect stamps; Robert collects cars. He has a Corvette, Bentley, Volvo, a Mustang, some Audis, a Porsche, a Mercedes and more!</li>
+                      <li>He has a sweet (and a salty) tooth. “I would have Domino’s pizza with pasta carbonara inside every slice. And at night I would have Neapolitan ice cream until I felt absolutely toxic,” he admits to Vanity Fair.</li>
+                      <li>Team Downey, he and his wife’s production company, produced their first film in 2014. The Judge , starring Robert Duvall, who received a best supporting actor nomination.</li>
+                      <li>The couple created their production company so that they could work as a unit. "Our feeling was, if we wanted to spend time together, have a life together, then we should just go ahead and make movies together," Susan tells the Hollywood Reporter.</li>
+                      <li>He earned roughly $75 million between June 2013 and June 2014.</li>
+                      <li>Team Downey’s next project, Yucatan, is based on the lost works of iconic actor Steve McQueen, which he penned in the 1960s prior to his death in 1980.</li>
+                      <li>The big time ‘yogi’ is also working towards a black belt in the Chinese martial art of Wing Chun.</li>
+                      <li>Robert loves his sunglasses! He is hardly seen without a colourful pair of specs and is said to be partial to the Ray-Ban brand.</li>
+                      <li>He never graduated from high school but earned his GED during one of his stints in jail.</li>
+                      <li>He is still close friends with childhood friend Kiefer Sutherland, his costar in the 1988 film 1969.</li>
+                      <li>During a Reddit chat, Robert said that he would be up for a guest appearance on Marvel’s small screen series Agents of S.H.I.E.L.D. , “Nothing is impossible. But there might be a fair amount of red tape involved in something like that. I love Clark Gregg, and am pleased the show is doing so well.”</li>
+                      <li>He’s multi-talented. Robert can sing as well as act. In 2004 he released a jazz album entitled “The Futurist.”</li>
+                      <li>Robert has said that his favourite actor of all time is Peter O’Toole.</li>
+                      <li>His love for his mother, who passed away in 2014, was immeasurable, telling The Telegraph, “My ambition, tenacity, loyalty, moods, grandiosity, occasional passive aggression and faith, that’s all her.</li>
+                      <li>His nickname is Bob.</li>
+                      <li>His performance in 1992’s Chaplin received the royal stamp of approval from Queen Elizabeth herself, who attended the London premiere in Leicester Square.</li>
+                      <li>He might play a super hero on screen, but Robert recalls the moment he realized that he isn’t invincible, telling Deadline, “I was doing a wire jump [on the set of Iron Man 3 ] and I got to the top of the stairs and I tripped, and banged my ankle. Susan came around the corner, she goes, “All right. Are you finally going to accept the fact that you’re injured and that you’re not a kid. Just look at you on the floor there. Look at you!”</li>
+                      <li>Robert recently raffled off a chance to spend the day with him in support of a charity close to his heart, the children’s hospice Julia’s House.</li>
+                      <li>In October 2011, Robert’s friends, including Jennifer Aniston, Jodie Foster, Mel Gibson and Michael Douglas, paid tribute to the actor during a ceremony celebrating his American Cinematheque award.</li>
+                      <li>During a sit down on Late Night with Seth Myers, Robert reveled that he loves attending comic conventions, saying, “I feel like I’m the mayor of Comic-Con. My normal life seems incredibly dull and passive. But when I’m at Comic-Con, I’m a deity.”</li>
+                      <li>His acting legacy was memorialized in 2009 during a Hand and Foot Ceremony outside LA’s famed TCL Chinese Theatre.</li>
+                      <li>Iron Man director Jon Favreau cast Robert in his 2014 film Chef and said that his pal’s only flaw is, “he can’t cook.”</li>
+                      <li>The people love him! He has taken home three People’s Choice Awards – all for his work as Tony Stark aka Iron Man.</li>
+                    </ol>
+                  </div>
+                </section> 
+                <section>
+                  <h3>Cinema characters &#127916;</h3>
+                  <div class="labels">
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt2094116/?ref_=nm_flmg_act_1">Sherlock Holmes 3</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt2461172/?ref_=nm_flmg_act_2">All-Star Weekend</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt6673612/?ref_=nm_flmg_act_3">Dolittle</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt4154796/?ref_=nm_flmg_act_5">Avengers: Endgame</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt2250912/?ref_=nm_flmg_act_7">Spider-Man: Homecoming</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt3799694/?ref_=nm_flmg_act_9">The Nice Guys</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt1872194/?ref_=nm_flmg_act_12">The Judge</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt2883512/?ref_=nm_flmg_act_13">Chef</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt1231583/?ref_=nm_flmg_act_17">Due Date</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt1686782/?ref_=nm_flmg_act_18">Love & Distrust</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt0821642/?ref_=nm_flmg_act_21">The Soloist</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt0942385/?ref_=nm_flmg_act_23">Tropic Thunder</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt0371746/?ref_=nm_flmg_act_26">Iron Man</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/title/tt0443706/?ref_=nm_flmg_act_30">Zodiac</a>
+                    <a rel="external" class="label" href="https://www.imdb.com/name/nm0000375/">And even more, than you can imagine &#128064;</a>
+                  </div>
+                </section>
+                <section>
+                  <h3>Skills</h3>
+                  <p class="tags small">Charizma  
+                    <span class="nowrap">Master of speech</span> 
+                    <span class="nowrap">Sensuality</span>
+                    That's all, what i need</p>
+                </section>
+                <!-- Skills -->
+                <!-- Character -->
+                <!-- Likes -->
+                <!-- Dislikes -->
+                <!-- Wants -->
+                <!-- Education -->
+                <!-- Articles -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script>
+      function myFunction() {
+        var winScroll = document.getElementById("scrollable-div").scrollTop;
+        var height = document.getElementById("scrollable-div").scrollHeight - document.getElementById("scrollable-div").clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+      document.getElementById("scrollable-div").addEventListener('scroll',myFunction);
+     
+    </script>
+    <script>
+      var ageContainer = document.getElementById("current-age");
+
+      const starkBirth = new Date("1965-04-04T00:00:00");
+
+      setInterval(()=>{
+    
+        var now = new Date();
+        var age = new Date(now - starkBirth );
+
+        ageContainer.innerText = `Now my age is ${now.getFullYear()- starkBirth.getFullYear()} years ${age.getMonth()} months ${age.getDate()} days ${age.getUTCHours()} hours ${age.getMinutes()} minutes ${age.getSeconds()} seconds`;
+      },1000)
+    </script>
   </body>
 </html>
