@@ -42,13 +42,13 @@
     <link rel="me" href="mailto:alexoid1999@gmail.com">
     <link rel="me" href="skype:lexagordiy">
     <link rel="me" href="tel:+380639383667">
-    <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
   </head>
   <body>
-    <main>
+    <main id='root'>
       <article>
-        <div class="page" style="border-color: midnightblue;">
+        <div id='page' class="page" style="border-color: midnightblue;">
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
@@ -314,6 +314,20 @@
 
         ageContainer.innerText = `Now my age is ${now.getFullYear()- starkBirth.getFullYear()} years ${age.getMonth()} months ${age.getDate()} days ${age.getUTCHours()} hours ${age.getMinutes()} minutes ${age.getSeconds()} seconds`;
       },1000)
+    </script>
+    <script>
+      document.getElementById('root').style.setProperty('transition', 'all 0.4s ease-in-out');
+
+      const getRandomNumber=(min, max)=>{
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      setInterval(()=>{
+        let newRGBcolor = [getRandomNumber(0,255), getRandomNumber(0,255), getRandomNumber(0,255)];
+        document.getElementById('root').style.setProperty('background', `rgb(${newRGBcolor.toString()})`);
+        document.getElementById('page').style.setProperty('border-color', `rgb(${newRGBcolor.toString()}`);
+      },5000)
     </script>
   </body>
 </html>
